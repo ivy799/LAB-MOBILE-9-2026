@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.TP3" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:colorBackground">#F5F9FF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+        <item name="colorOnBackground">#212121</item>
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryVariant">#0D47A1</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#1565C0</item>
+        <item name="android:textColorHint">#888888</item>
+    </style>
+</resources>
