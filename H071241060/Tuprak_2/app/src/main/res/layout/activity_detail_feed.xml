@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_circle_gray"
+                android:clipToOutline="true"
+                android:contentDescription="Foto profil"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+        </LinearLayout>
+
+        <!-- Gambar penuh -->
+        <ImageView
+            android:id="@+id/iv_post_full"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:minHeight="300dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Gambar postingan"/>
+
+        <!-- Action bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp">
+
+            <ImageView android:id="@+id/iv_like" android:layout_width="28dp"
+                android:layout_height="28dp" android:src="@drawable/ic_heart_outline"
+                android:contentDescription="Suka" android:padding="2dp"/>
+            <ImageView android:id="@+id/iv_comment" android:layout_width="28dp"
+                android:layout_height="28dp" android:layout_marginStart="12dp"
+                android:src="@drawable/ic_comment" android:contentDescription="Komentar"
+                android:padding="2dp"/>
+            <ImageView android:id="@+id/iv_share" android:layout_width="28dp"
+                android:layout_height="28dp" android:layout_marginStart="12dp"
+                android:src="@drawable/ic_send" android:contentDescription="Bagikan"
+                android:padding="2dp"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_bookmark" android:layout_width="28dp"
+                android:layout_height="28dp" android:src="@drawable/ic_bookmark"
+                android:contentDescription="Simpan" android:padding="2dp"/>
+        </LinearLayout>
+
+        <!-- Like count -->
+        <TextView android:id="@+id/tv_like_count" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingHorizontal="12dp"
+            android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+
+        <!-- Caption -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingHorizontal="12dp" android:paddingTop="4dp">
+            <TextView android:id="@+id/tv_username_caption" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="14sp"
+                android:textStyle="bold" android:textColor="@color/text_primary"
+                android:layout_marginEnd="4dp"/>
+            <TextView android:id="@+id/tv_caption_full" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:textSize="14sp" android:textColor="@color/text_primary"
+                android:lineSpacingExtra="2dp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tv_comment_count" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingHorizontal="12dp"
+            android:paddingTop="4dp" android:textSize="13sp" android:textColor="@color/text_secondary"/>
+
+        <TextView android:id="@+id/tv_time_ago" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingHorizontal="12dp"
+            android:paddingTop="4dp" android:paddingBottom="24dp"
+            android:textSize="11sp" android:textColor="@color/text_secondary"/>
+    </LinearLayout>
+</ScrollView>

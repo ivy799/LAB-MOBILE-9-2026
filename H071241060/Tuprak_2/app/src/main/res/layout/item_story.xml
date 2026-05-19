@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="4dp">
+
+    <!-- Ring + Cover -->
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="72dp">
+
+        <!-- Ring gradient (luar) -->
+        <ImageView
+            android:id="@+id/iv_story_ring"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/bg_story_ring"
+            android:contentDescription="Story ring"/>
+
+        <!-- Cover photo (dalam) -->
+        <ImageView
+            android:id="@+id/iv_story_cover"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle_gray"
+            android:clipToOutline="true"
+            android:contentDescription="Cover highlight"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_story_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="11sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

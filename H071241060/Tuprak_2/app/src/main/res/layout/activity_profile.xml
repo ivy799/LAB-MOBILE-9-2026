@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Stats: foto + angka -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Foto profil -->
+            <ImageView
+                android:id="@+id/iv_profile_large"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_circle_gray"
+                android:clipToOutline="true"
+                android:contentDescription="Foto profil"/>
+
+            <!-- Stats -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Post -->
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:id="@+id/tv_post_count" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="18sp"
+                        android:textStyle="bold" android:textColor="@color/text_primary" android:text="0"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Postingan" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                </LinearLayout>
+
+                <!-- Pengikut -->
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:id="@+id/tv_follower_count" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="18sp"
+                        android:textStyle="bold" android:textColor="@color/text_primary" android:text="0"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Pengikut" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                </LinearLayout>
+
+                <!-- Mengikuti -->
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:id="@+id/tv_following_count" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="18sp"
+                        android:textStyle="bold" android:textColor="@color/text_primary" android:text="0"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Mengikuti" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Nama & Bio -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:paddingHorizontal="16dp">
+
+            <TextView android:id="@+id/tv_full_name" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="15sp"
+                android:textStyle="bold" android:textColor="@color/text_primary"/>
+
+            <TextView android:id="@+id/tv_bio" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="14sp"
+                android:textColor="@color/text_primary" android:layout_marginTop="2dp"
+                android:lineSpacingExtra="2dp"/>
+        </LinearLayout>
+
+        <!-- Tombol Edit / Post baru -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:padding="12dp" android:gravity="center">
+
+            <Button android:layout_width="0dp" android:layout_height="36dp"
+                android:layout_weight="1" android:layout_marginEnd="4dp"
+                android:text="Edit Profil"
+                android:textSize="13sp"
+                android:backgroundTint="@color/btn_secondary"
+                android:textColor="@color/text_primary"
+                style="?attr/materialButtonOutlinedStyle"/>
+
+            <Button android:id="@+id/btn_new_post" android:layout_width="0dp"
+                android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="4dp"
+                android:text="+ Postingan"
+                android:textSize="13sp"
+                android:backgroundTint="@color/btn_secondary"
+                android:textColor="@color/text_primary"
+                style="?attr/materialButtonOutlinedStyle"/>
+        </LinearLayout>
+
+        <!-- Highlights -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp" android:paddingTop="4dp"
+            android:text="Highlight" android:textSize="14sp"
+            android:textStyle="bold" android:textColor="@color/text_primary"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_highlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/divider" android:layout_marginTop="4dp"/>
+
+        <!-- Grid icon indicator -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="48dp"
+            android:gravity="center">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp"
+                android:src="@drawable/ic_grid" android:contentDescription="Grid"/>
+        </LinearLayout>
+
+        <!-- Grid RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
