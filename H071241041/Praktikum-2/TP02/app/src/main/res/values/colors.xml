@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_primary">#FFFFFF</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#8E8E8E</color>
+    <color name="divider">#DBDBDB</color>
+    <color name="accent_blue">#0095F6</color>
+    <color name="btn_secondary">#EFEFEF</color>
+    <color name="story_border">#C13584</color>
+    <color name="story_progress_bg">#66FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha">#CCFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="post_image_bg">#F0F0F0</color>
+    <color name="heart_red">#ED4956</color>
+</resources>
