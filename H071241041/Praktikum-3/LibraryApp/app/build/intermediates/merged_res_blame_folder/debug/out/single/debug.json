@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_sapiens.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_sapiens.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_genre_chip.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_genre_chip.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_chip_unselected.xml.flat",
+        "source": "com.library.app-main-34:/drawable/chip_unselected.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_chip_selected.xml.flat",
+        "source": "com.library.app-main-34:/drawable/chip_selected.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_default.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_default.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.library.app-main-34:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_back_button.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_back_button.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_richdad.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_richdad.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_search.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_card.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_laskar.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_laskar.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_gradient_overlay.xml.flat",
+        "source": "com.library.app-main-34:/drawable/gradient_overlay.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/color_nav_selector.xml.flat",
+        "source": "com.library.app-main-34:/color/nav_selector.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_back_btn.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_back_btn.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "com.library.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.library.app-main-34:/mipmap-hdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_perahukrts.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_perahukrts.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/layout_item_genre_chip.xml.flat",
+        "source": "com.library.app-main-34:/layout/item_genre_chip.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/color_nav_item_color.xml.flat",
+        "source": "com.library.app-main-34:/color/nav_item_color.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_search.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_search.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_negeri5.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_negeri5.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_genre_chip_selected.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_genre_chip_selected.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_spinner.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_spinner.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_book_placeholder.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_book_placeholder.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/layout_activity_detail.xml.flat",
+        "source": "com.library.app-main-34:/layout/activity_detail.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.library.app-main-34:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_heart_filled.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_heart_filled.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_hp.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_hp.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_1984.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_1984.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_bumi.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_bumi.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/layout_item_book.xml.flat",
+        "source": "com.library.app-main-34:/layout/item_book.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_dilan.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_dilan.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/layout_fragment_home.xml.flat",
+        "source": "com.library.app-main-34:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_add_photo.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_add_photo.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_psychmoney.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_psychmoney.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_vanderwijck.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_vanderwijck.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_homodeus.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_homodeus.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_ikigai.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_ikigai.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_cover_placeholder.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_cover_placeholder.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_home.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_heart_outline.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_heart_outline.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_cleancode.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_cleancode.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_back.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_add.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_chip_genre_item.xml.flat",
+        "source": "com.library.app-main-34:/drawable/chip_genre_item.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_alchemist.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_alchemist.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_favorite.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_favorite.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/layout_fragment_favorites.xml.flat",
+        "source": "com.library.app-main-34:/layout/fragment_favorites.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_atomic.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_atomic.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_bg_genre_badge.xml.flat",
+        "source": "com.library.app-main-34:/drawable/bg_genre_badge.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/layout_fragment_add_book.xml.flat",
+        "source": "com.library.app-main-34:/layout/fragment_add_book.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_ic_heart.xml.flat",
+        "source": "com.library.app-main-34:/drawable/ic_heart.xml"
+    },
+    {
+        "merged": "com.library.app-merged_res-32:/drawable_cover_pulang.xml.flat",
+        "source": "com.library.app-main-34:/drawable/cover_pulang.xml"
+    }
+]
