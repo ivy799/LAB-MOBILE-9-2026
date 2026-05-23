@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pink primary palette -->
+    <color name="pink_primary">#E91E8C</color>
+    <color name="pink_primary_dark">#C2185B</color>
+    <color name="pink_light">#FCE4EC</color>
+    <color name="pink_medium">#F48FB1</color>
+    <color name="pink_soft">#FFF0F5</color>
+    <color name="pink_accent">#FF4081</color>
+
+    <!-- Keeping old names for compatibility -->
+    <color name="primary">#E91E8C</color>
+    <color name="primary_light">#FCE4EC</color>
+    <color name="primary_dark">#C2185B</color>
+    <color name="background">#FFF5F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#3D1535</color>
+    <color name="text_secondary">#9E4B7A</color>
+    <color name="text_hint">#FFAACF</color>
+    <color name="chip_bg">#FCE4EC</color>
+    <color name="liked_color">#E91E8C</color>
+    <color name="star_color">#FFD700</color>
+    <color name="nav_item_selected">#E91E8C</color>
+    <color name="nav_item_unselected">#FFAACF</color>
+    <color name="chip_text">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Dark mode surface -->
+    <color name="dark_background">#1A0A12</color>
+    <color name="dark_surface">#2D1A23</color>
+    <color name="dark_surface2">#3D2330</color>
+</resources>
