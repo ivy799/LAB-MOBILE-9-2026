@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+
+    <!-- Square aspect ratio trick with ConstraintLayout or fixed height, 
+         using a custom view or programmatic adjustment is best, but a simple 
+         ImageView with setAdjustViewBounds might need programmatic height matching width.
+         Here we just use a minimum square-ish height as fallback, or we can handle it in adapter. 
+         Let's just use an ImageView and handle square in code or rely on scaleType. -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp">
+        
+        <ImageView
+            android:id="@+id/imgPost"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" 
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_image"/>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
