@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Judul Game -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BrainPlay"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Sub-judul Baru Menarik -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asah Otakmu Sekarang!"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Tombol Mulai Kuis (Rounded & Mengikuti Tema) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Mulai Kuis"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        app:backgroundTint="?android:attr/colorAccent"
+        app:cornerRadius="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Lihat Riwayat (Rounded & Mengikuti Tema) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Lihat Riwayat Skor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        app:backgroundTint="?android:attr/colorControlHighlight"
+        app:cornerRadius="16dp"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Switch Mode Gelap (ID FIX: switchTheme) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode Gelap "
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

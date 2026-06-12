@@ -1,0 +1,54 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace = "com.labfinal.brainplay"
+
+    // 1. KAKAK NAIKKAN KE VERSI 36 AGAR COCOK DENGAN REKOMENDASI ERROR
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.labfinal.brainplay"
+        minSdk = 24
+
+        // 2. KAKAK NAIKKAN JUGA KE VERSI 36 AGAR SINKRON
+        targetSdk = 36
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+
+    // Library Retrofit untuk mengambil data API Kuis
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // PERSIAPAN FITUR: Library Navigation Component & Fragment
+    implementation("androidx.navigation:navigation-fragment:2.8.0")
+    implementation("androidx.navigation:navigation-ui:2.8.0")
+}
