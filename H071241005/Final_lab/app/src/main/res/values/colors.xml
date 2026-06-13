@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Outdoor Palette (Light) -->
+    <color name="brand_primary">#1B3022</color> <!-- Deep Forest -->
+    <color name="brand_accent">#E6B01E</color>  <!-- Golden Sun -->
+    <color name="brand_secondary">#3D5A45</color>
+
+    <!-- Premium Outdoor Palette (Dark) -->
+    <color name="brand_primary_dark">#81C784</color>
+    <color name="brand_accent_dark">#FFD54F</color>
+    <color name="brand_secondary_dark">#2E7D32</color>
+
+    <!-- Neutrals Light -->
+    <color name="surface_light">#FAFAFA</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_main">#1A1C1E</color>
+    <color name="text_muted">#6C757D</color>
+    <color name="border_color">#E9ECEF</color>
+
+    <!-- Neutrals Dark -->
+    <color name="surface_dark">#121212</color>
+    <color name="surface_card_dark">#1E1E1E</color>
+    <color name="text_main_dark">#E2E2E6</color>
+    <color name="text_muted_dark">#A0A0A0</color>
+    <color name="border_color_dark">#333333</color>
+
+    <!-- UI States -->
+    <color name="rating_yellow">#FFC107</color>
+    <color name="rating_bg">#FFF9C4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

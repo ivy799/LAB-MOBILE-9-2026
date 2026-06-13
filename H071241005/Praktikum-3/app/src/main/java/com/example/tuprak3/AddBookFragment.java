@@ -1,0 +1,91 @@
+package com.example.tuprak3;
+
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import com.example.tuprak3.R;
+import java.util.UUID;
+
+public class AddBookFragment extends Fragment {
+    private ImageView ivCoverPreview;
+    private Uri selectedImageUri = null;
+
+    private final ActivityResultLauncher<String> getContent = registerForActivityResult(
+            new ActivityResultContracts.GetContent(), uri -> {
+                if (uri != null) {
+                    selectedImageUri = uri;
+                    ivCoverPreview.setImageURI(uri);
+                }
+            });
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_add_book, container, false);
+
+        EditText etTitle = view.findViewById(R.id.etTitle);
+        EditText etAuthor = view.findViewById(R.id.etAuthor);
+        EditText etYear = view.findViewById(R.id.etYear);
+        EditText etBlurb = view.findViewById(R.id.etBlurb);
+        EditText etGenre = view.findViewById(R.id.etGenre);
+        Button btnPickImage = view.findViewById(R.id.btnPickImage);
+        Button btnSave = view.findViewById(R.id.btnSave);
+        ivCoverPreview = view.findViewById(R.id.ivCoverPreview);
+
+        btnPickImage.setOnClickListener(v -> getContent.launch("image/*"));
+
+        btnSave.setOnClickListener(v -> {
+            String title = etTitle.getText().toString().trim();
+            String author = etAuthor.getText().toString().trim();
+            String year = etYear.getText().toString().trim();
+            String blurb = etBlurb.getText().toString().trim();
+            String genre = etGenre.getText().toString().trim();
+
+            if (title.isEmpty()) {
+                Toast.makeText(getContext(), "Judul tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (genre.isEmpty()) {
+                Toast.makeText(getContext(), "Genre tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            Book newBook = new Book(
+                    UUID.randomUUID().toString(), 
+                    title,
+                    author, 
+                    year,
+                    blurb, 
+                    genre,
+                    0.0, 
+                    R.drawable.ic_book
+            );
+
+            if (selectedImageUri != null) {
+                newBook.setCoverUri(selectedImageUri.toString());
+            }
+
+            BookRepository.getInstance().addBook(newBook);
+            Toast.makeText(getContext(), "Buku '" + title + "' berhasil ditambahkan ke genre " + genre, Toast.LENGTH_SHORT).show();
+
+            etTitle.setText(""); 
+            etAuthor.setText(""); 
+            etYear.setText("");
+            etBlurb.setText(""); 
+            etGenre.setText("");
+            ivCoverPreview.setImageResource(R.drawable.ic_camera);
+            selectedImageUri = null;
+        });
+
+        return view;
+    }
+}
